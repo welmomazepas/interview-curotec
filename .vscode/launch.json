@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FastAPI version",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "fastapi_version.app:app", "--reload"
+            ],
+            "env": {
+                "PYDEVD_DISABLE_FILE_VALIDATION": "1"
+            },
+            "jinja": false,
+            "justMyCode": true
+        },
+        {
+            "name": "Django version",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/drf_version/manage.py",
+            "args": ["runserver"],
+            "django": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Flask Version",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "flask_version/app.py",
+                "FLASK_DEBUG": "1"
+            },
+            "args": [
+                "run",
+                "--no-debugger"
+            ],
+            "jinja": false,
+            "autoStartBrowser": false
+        }
+    ]
+}
