@@ -14,3 +14,16 @@ Update an existing item
 Delete an item
 
 You will implement this API in three frameworks: Django (with Django REST Framework), Flask, and FastAPI. Each framework will be implemented separately, but the resource and functionality will remain the same across all implementations.
+
+## Installing dependencies
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+```
+
+
+## Running on VSCode
+
+There is a launch file for launching all applications via VSCode. Click on the launch menu and it show the 3 different projects as runnable
