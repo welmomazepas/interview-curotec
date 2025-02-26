@@ -1,0 +1,23 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "black-formatter.args": ["--max-line-length=120"],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.rulers": [120],
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.insertSpaces": true,
+        "editor.formatOnSaveMode": "file",
+    },
+    "flake8.args": ["--max-line-length=120"],
+    "python.analysis.autoImportCompletions": true
+}
